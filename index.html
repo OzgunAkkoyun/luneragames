@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lunera Games — Play a Brighter World</title>
+  <meta name="description" content="Lunera Games — göksel dünyalar, parlak hikâyeler. Play a brighter world." />
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="assets/favicon-32.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=3" />
+</head>
+<body>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="nebula nebula--a" aria-hidden="true"></div>
+  <div class="nebula nebula--b" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand-mark" href="#top">
+      <img src="assets/favicon-32.png" alt="" class="brand-mark__logo" width="32" height="32" />
+      <span class="brand-mark__text">LUNERA</span>
+    </a>
+    <nav class="nav" aria-label="Ana menü">
+      <a href="#studio">Stüdyo</a>
+      <a href="#worlds">Dünyalar</a>
+      <a href="#signal">İletişim</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" aria-label="Lunera Games">
+      <h1 class="visually-hidden">Lunera Games — Play a brighter world</h1>
+      <div class="hero__visual">
+        <img
+          src="assets/logo.png"
+          alt="Lunera Games logosu — hilal ay, yıldız ve yörünge halkası"
+          class="hero__logo"
+          width="720"
+          height="720"
+        />
+      </div>
+      <div class="hero__copy">
+        <div class="hero__actions">
+          <a class="btn btn--gold" href="#worlds">Dünyaları Keşfet</a>
+          <a class="btn btn--ghost" href="#signal">İletişim</a>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#studio" aria-label="Aşağı kaydır">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- STUDIO -->
+    <section class="section studio" id="studio">
+      <div class="section__inner">
+        <p class="section__label">01 — Stüdyo</p>
+        <h2 class="section__title">Karanlığın içinde<br />bir ışık çiziyoruz.</h2>
+        <p class="section__lead">
+          Lunera Games, gece gökyüzünden ilham alan bağımsız bir oyun stüdyosu.
+          Hikâyeleri hilalin gölgesinde, yıldızların arasında ve unutulmuş yörüngelerde kuruyoruz.
+        </p>
+        <div class="studio__grid">
+          <article class="studio__item">
+            <h3>Atmosfer</h3>
+            <p>Her dünya bir duygu. Sis, altın ışık ve derin mor gölgelerle hissi önce inşa ediyoruz.</p>
+          </article>
+          <article class="studio__item">
+            <h3>Mitoloji</h3>
+            <p>Oyuncular bir harita değil, yaşayan bir efsane keşfeder. Ay fazları hikâyeyi şekillendirir.</p>
+          </article>
+          <article class="studio__item">
+            <h3>Zanaat</h3>
+            <p>Küçük ekip, büyük özen. Her ses, her parçacık, her diyalog elle parlatılır.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORLDS / GAMES -->
+    <section class="section worlds" id="worlds">
+      <div class="section__inner">
+        <p class="section__label">02 — Dünyalar</p>
+        <h2 class="section__title">Yaptığımız oyunlar</h2>
+        <p class="section__lead">Şimdilik yörüngede tek bir dünya var — yenileri yolda.</p>
+
+        <div class="world-cards world-cards--single">
+          <article class="world-card world-card--featured" data-tilt>
+            <div class="world-card__phase">Lunera · Oyun</div>
+            <h3>Cat Blocker</h3>
+            <p>
+              Lunera Games’in şu anki oyunu. Kediler, engeller ve zekice hamlelerle
+              dolu bir deneyim — daha fazla detay yakında.
+            </p>
+            <span class="world-card__status">Aktif proje</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section signal" id="signal">
+      <div class="section__inner section__inner--narrow">
+        <p class="section__label">03 — İletişim</p>
+        <h2 class="section__title">Bize yaz</h2>
+        <p class="section__lead">
+          İşbirliği, stüdyo haberleri veya sadece bir selam — mesajını bırak.
+        </p>
+        <form class="signal-form" id="signalForm">
+          <div class="field">
+            <label for="name">Adın</label>
+            <input type="text" id="name" name="name" required autocomplete="name" placeholder="Adın" />
+          </div>
+          <div class="field">
+            <label for="email">E-posta</label>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="sen@ornek.com" />
+          </div>
+          <div class="field field--full">
+            <label for="message">Mesaj</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Mesajın"></textarea>
+          </div>
+          <button type="submit" class="btn btn--gold">Gönder</button>
+          <p class="form-note" id="formNote" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer__brand">
+      <img src="assets/logo.png" alt="" width="64" height="64" class="footer__logo" />
+      <div>
+        <strong>LUNERA GAMES</strong>
+        <p>Play a brighter world.</p>
+      </div>
+    </div>
+    <p class="footer__copy">
+      <a href="docs/privacy.html">Privacy Policy</a>
+      · © <span id="year"></span> Lunera Games. Tüm hakları saklıdır.
+    </p>
+  </footer>
+
+  <script src="js/main.js?v=3"></script>
+</body>
+</html>
