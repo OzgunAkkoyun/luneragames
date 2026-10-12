@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "games": [
+    {
+      "id": "catunblock",
+      "name": "Cat Unblock",
+      "bundleId": "com.luneragames.catunblock",
+      "live": false,
+      "playStore": true,
+      "appStoreId": null,
+      "icon": "https://luneragames.com/assets/games/catunblock.png",
+      "tagline": {
+        "en": "Slide the blocks and help the cat escape",
+        "tr": "Blokları kaydır, kediyi dışarı çıkar",
+        "es": "Desliza los bloques y ayuda al gato a escapar",
+        "pt": "Deslize os blocos e ajude o gato a escapar",
+        "fr": "Fais glisser les blocs et aide le chat à s’échapper",
+        "de": "Schiebe die Blöcke und hilf der Katze zu entkommen",
+        "it": "Sposta i blocchi e aiuta il gatto a scappare",
+        "ja": "ブロックを動かして猫を脱出させよう",
+        "ko": "블록을 밀어 고양이를 탈출시키세요",
+        "zh": "滑动方块，帮助猫咪逃脱",
+        "ru": "Двигай блоки и помоги коту сбежать",
+        "id": "Geser balok dan bantu kucing kabur"
+      }
+    },
+    {
+      "id": "purrblocks",
+      "name": "Purr Blocks",
+      "bundleId": "com.luneragames.purrblocks",
+      "live": false,
+      "playStore": true,
+      "appStoreId": null,
+      "icon": "https://luneragames.com/assets/games/purrblocks.png",
+      "tagline": {
+        "en": "Place blocks, clear lines, beat your high score",
+        "tr": "Blokları yerleştir, satırları patlat, rekorunu kır",
+        "es": "Coloca bloques, limpia líneas y supera tu récord",
+        "pt": "Encaixe blocos, limpe linhas e bata seu recorde",
+        "fr": "Place les blocs, efface les lignes, bats ton record",
+        "de": "Setze Blöcke, räume Reihen ab, knack deinen Rekord",
+        "it": "Piazza i blocchi, libera le righe, batti il record",
+        "ja": "ブロックを置いてラインを消し、ハイスコアを更新しよう",
+        "ko": "블록을 놓고 줄을 지워 최고 점수에 도전하세요",
+        "zh": "放置方块，消除行列，刷新最高分",
+        "ru": "Ставь блоки, очищай линии, бей свой рекорд",
+        "id": "Taruh balok, hapus baris, pecahkan rekormu"
+      }
+    }
+  ]
+}
