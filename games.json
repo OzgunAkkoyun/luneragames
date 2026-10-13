@@ -5,7 +5,7 @@
       "id": "catunblock",
       "name": "Cat Unblock",
       "bundleId": "com.luneragames.catunblock",
-      "live": false,
+      "live": true,
       "playStore": true,
       "appStoreId": null,
       "icon": "https://luneragames.com/assets/games/catunblock.png",
