@@ -4,51 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cat Unblock — Lunera Games</title>
-  <meta name="description" content="Cat Unblock: Slide Puzzle — slide the blocks and help the cat escape. Free on Google Play." />
+  <meta name="description" content="Cat Unblock: Slide Puzzle — slide the blocks and help the cat escape. Free to play." />
   <meta property="og:title" content="Cat Unblock: Slide Puzzle" />
-  <meta property="og:description" content="Slide the blocks and help the cat escape. Free on Google Play." />
+  <meta property="og:description" content="Slide the blocks and help the cat escape. Free to play." />
   <meta property="og:image" content="https://luneragames.com/assets/games/catunblock.png" />
-  <!-- Instagram vb. uygulama içi tarayıcılar doğrudan Play Store bağlantısını açamayabiliyor; bu sayfa aracı olur -->
-  <meta http-equiv="refresh" content="1; url=https://play.google.com/store/apps/details?id=com.luneragames.catunblock" />
   <link rel="icon" href="assets/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" href="assets/favicon-32.png" sizes="32x32" />
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: radial-gradient(circle at 50% 30%, #2a2346, #0f0c1d 70%);
-      color: #f3eefc;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-      text-align: center;
-    }
-    main { padding: 2rem 1.5rem; max-width: 360px; }
-    img { width: 120px; height: 120px; border-radius: 26px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45); }
-    h1 { font-size: 1.5rem; margin: 1.25rem 0 0.4rem; }
-    p { color: #b9b0d4; margin: 0 0 1.75rem; line-height: 1.5; }
-    a.btn {
-      display: inline-block;
-      padding: 0.95rem 1.75rem;
-      border-radius: 999px;
-      background: linear-gradient(120deg, #f6c75c, #f39c12);
-      color: #1d1530;
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 1.05rem;
-    }
-  </style>
+  <link rel="stylesheet" href="css/store.css?v=1" />
 </head>
-<body>
+<!-- Instagram vb. uygulama içi tarayıcılar mağaza bağlantısını doğrudan açamayabiliyor; bu sayfa aracı olur -->
+<body data-game="catunblock" data-package="com.luneragames.catunblock">
   <main>
     <img src="assets/games/catunblock.png" alt="Cat Unblock" />
     <h1>Cat Unblock: Slide Puzzle</h1>
-    <p>Slide the blocks and help the cat escape. Free on Google Play.</p>
-    <a class="btn" id="play" href="https://play.google.com/store/apps/details?id=com.luneragames.catunblock">Get it on Google Play</a>
+    <p>Slide the blocks and help the cat escape.</p>
+    <div class="stores">
+      <a class="btn" id="storePlay" hidden>Get it on Google Play</a>
+      <a class="btn btn--ios" id="storeIos" hidden>Download on the App Store</a>
+    </div>
+    <p class="store-note" id="storeNote"></p>
+    <noscript>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.luneragames.catunblock">Get it on Google Play</a>
+    </noscript>
   </main>
-  <script>
-    location.replace(document.getElementById('play').href);
-  </script>
+  <script src="js/store-link.js?v=2"></script>
 </body>
 </html>
