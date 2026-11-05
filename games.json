@@ -30,7 +30,7 @@
       "bundleId": "com.luneragames.purrblocks",
       "live": false,
       "playStore": true,
-      "appStoreId": null,
+      "appStoreId": "6822656021",
       "icon": "https://luneragames.com/assets/games/purrblocks.png",
       "tagline": {
         "en": "Place blocks, clear lines, beat your high score",
@@ -45,6 +45,29 @@
         "zh": "放置方块，消除行列，刷新最高分",
         "ru": "Ставь блоки, очищай линии, бей свой рекорд",
         "id": "Taruh balok, hapus baris, pecahkan rekormu"
+      }
+    },
+    {
+      "id": "cannonclank",
+      "name": "Cannon Clank",
+      "bundleId": "com.luneragames.cannonclank",
+      "live": true,
+      "playStore": true,
+      "appStoreId": null,
+      "icon": "https://luneragames.com/assets/games/cannonclank.png",
+      "tagline": {
+        "en": "Aim the cannon and knock down the cans",
+        "tr": "Topu nişan al, kutuları devir",
+        "es": "Apunta el cañón y tumba las latas",
+        "pt": "Mire o canhão e derrube as latas",
+        "fr": "Vise avec le canon et fais tomber les boîtes",
+        "de": "Ziele mit der Kanone und wirf die Dosen um",
+        "it": "Mira il cannone e abbatti le lattine",
+        "ja": "大砲を狙って缶を倒そう",
+        "ko": "대포를 조준해 캔을 쓰러뜨리세요",
+        "zh": "瞄准大炮，打翻罐子",
+        "ru": "Целься из пушки и сбивай банки",
+        "id": "Bidik meriam dan jatuhkan kalengnya"
       }
     }
   ]
