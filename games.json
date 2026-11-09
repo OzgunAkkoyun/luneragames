@@ -28,7 +28,7 @@
       "id": "purrblocks",
       "name": "Purr Blocks",
       "bundleId": "com.luneragames.purrblocks",
-      "live": false,
+      "live": true,
       "playStore": true,
       "appStoreId": "6822656021",
       "icon": "https://luneragames.com/assets/games/purrblocks.png",
